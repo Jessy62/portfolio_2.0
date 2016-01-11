@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Mon Portfolio 2.0</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+  <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville|Montserrat' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <style>
+    /* Barre de navigation */
+
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    /*Pied de page*/
+
+    footer {
+    font-size: 15px;
+    color: rgb(208, 206, 217);
+	  background-color: #1e327c;
+    padding: 25px;
+    }
+
+    #presentation {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barre de navigation -->
+
+<nav class="borderNav">
+  <div class="container-fluid" id="test">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Page principale</a></li>
+        <li><a href="">A propos</a></li>
+        <li><a href="index2.html">Page à venir</a></li>
+        <li><a href="index3.html">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a id ="modal_trigger" onclick="function()"><span class="glyphicon glyphicon-log-in"></span>Connexion</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="padding:35px 50px;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4><span class="glyphicon glyphicon-lock"></span>Connexion</h4>
+        </div>
+        <div class="modal-body" style="padding:40px 50px;">
+          <form role="form">
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span>Nom d'utilisateur</label>
+              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span>Mot de passe</label>
+              <input type="password" class="form-control" id="psw" placeholder="Enter password">
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="" checked>Se souvenir de moi</label>
+            </div>
+              <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Connexion</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span>Annuler</button>
+          <p><a  class="sign_up" href="#">Devenir membre</a></p>
+          <p><a class="sign_up" href="#">Mot de passe oublié?</a></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>Bienvenue sur cette page de présentation, petit(e) curieux(se).</h1><br>
+    <p id="presentation">Je vais tenter de vous faire une présentation un peu plus poussée maintenant. Bonne lecture !</p>
+  </div>
+</div>
+
+<div class="bg-1">
+  <div class="container text-center">
+    <h3>Qui je suis?</h3><br>
+    <center><img src="img/myAvatar.png" class="img-circle" alt="Avatar" width="350" height="350"></center>
+    <h3 id="text">Je suis un Geek</h3><br>
+  </div>
+</div>
+
+<div class="container-fluid bg-2 text-center">
+  <h3>Ce que je suis?</h3>
+  <p>Passionné par l'informatique depuis ma plus tendre enfance, c'est une chose qui ne m'a jamais quitté, avec l'age et l'experience je n'ai fait qu'enrichir mes connaissances et ma culture dans ce domaine. L'évolution technologique ne fait qu'élargir encore plus ma soif de découvrir de nouvelles technologies et fonctionnalités. Aujourd'hui je commence à apprendre le langage informatique, c'est encore une corde à ajouter à mon arc et je voudrais en faire mon métier par la suite.</p><br>
+
+  <p>
+    D'autres passions? Oui bien sûr, j'aime beaucoup regarder des films ou des séries, je possède la faculté de retenir les dialogues presque mot pour mot et de les ressortir ensuite, c'est assez amusant en fait. A part cela j'aime aussi les jeux vidéos même si je n'y joue plus autant qu'avant. J'aime aussi le dessin, je n'ai jamais pris de cours mais il parait que je me débrouille pas trop mal. Je joue aussi de la guitare, j'ai pris des cours pendant 2 mois pour apprendre les bases et maintenant j'apprends tout seul.
+  </p><br>
+
+
+    <p>
+      Côté professsionnel j'ai travaillé dans le commerce. C'était un travail qui me plaisait mais pas autant que d'être derière un PC, en revanche, celà m'a appris le relationnel avec les clients et c'est une chose qui va certainement me servir dans le domaine ou je suis aujourd'hui. Je m'épanouis plainement dans ce que je fais maintenant, c'est un milieu très intéressant ou je ne fais qu'enrichir mes connaissances chaques jours.
+    </p><br>
+
+
+  <p>
+    Bien, bien, je crois que c'est à peu près tout, vous me connaissez un peu mieux maintenant, je vous laisse continuer la visite du site. A bientot.
+  </p>
+</div>
+
+
+<footer class="container-fluid text-center">
+  <p>Fait par Jessy apprenant Simplon @Boulogne sur mer</p>
+</footer>
+
+<script>
+$(document).ready(function(){
+    $("#modal_trigger").click(function(){
+        $("#myModal").modal();
+    });
+});
+</script>
+
+</body>
+</html>

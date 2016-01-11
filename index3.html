@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Mon Portfolio 2.0</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+  <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville|Montserrat' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <style>
+
+  /*Pied de page*/
+
+    footer {
+    font-size: 15px;
+    color: rgb(208, 206, 217);
+    background-color: #1e327c;
+    padding: 25px;
+    }
+
+    /*Zone du texte*/
+
+    textarea.form-control {
+    height: 309px;
+}
+
+  /*Responsive*/
+
+    @media screen and (max-width: 768px) {
+      .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+      }
+    }
+
+    /*Mise en forme du lien email*/
+
+    #mail {
+
+      text-decoration: none;
+      color: #4183D7;
+      margin-left: 10px;
+      font-weight: bold;
+    }
+
+    #mail:hover {
+
+      text-decoration: none;
+      color: #0e2678;
+      margin-left: 10px;
+      font-weight: bold;
+    }
+
+    /*Mise en forme section tel*/
+
+    #tel {
+      margin-left: 10px;
+    }
+
+    /*Mise en forme section mail*/
+
+    #mailtext {
+      margin-left: 10px;
+    }
+
+    /*Mise en forme section ville*/
+
+    #city {
+      margin-left: 10px;
+    }
+
+    /*Mise en forme bouton envoyer*/
+
+    #contact {
+
+      color: rgb(235, 246, 234);
+      background-color: rgb(28, 37, 69);
+    }
+
+
+    #contact:hover {
+
+      background-color: rgb(71, 126, 191);
+    }
+
+    #contact {
+      margin-bottom: 220px;
+    }
+
+    .container {
+      padding-top: 8%;
+    }
+
+    #section42 {background-color: #89C4F4;}
+
+</style>
+</head>
+<body>
+
+  <!-- Barre de navigation -->
+
+<nav class="borderNav">
+  <div class="container-fluid" id="test">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Page principale</a></li>
+        <li><a href="index1.html">A propos</a></li>
+        <li><a href="index2.html">Page à venir</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a id ="modal_trigger" onclick="function()"><span class="glyphicon glyphicon-log-in"></span>Connexion</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- <div class="container"> -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="padding:35px 50px;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4><span class="glyphicon glyphicon-lock"></span>Connexion</h4>
+        </div>
+        <div class="modal-body" style="padding:40px 50px;">
+          <form role="form">
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span>Nom d'utilisateur</label>
+              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span>Mot de passe</label>
+              <input type="password" class="form-control" id="psw" placeholder="Enter password">
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="" checked>Se souvenir de moi</label>
+            </div>
+              <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Connexion</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span>Annuler</button>
+          <p><a  class="sign_up" href="#">Devenir membre</a></p>
+          <p><a class="sign_up" href="#">Mot de passe oublié?</a></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+<!-- </div> -->
+
+<!-- Contact -->
+
+
+<div id="section42" class="container-fluid"><br><br><br>
+  <h3 class="text-center">Contactez moi</h3><br>
+  <p class="text-center">Envoyez moi un mail et j'y répondrais avec plaisir !</p><br><br>
+
+  <div class="row">
+    <div class="col-md-4">
+      <h3>Vous souhaitez me poser des questions? Allez y !</h3><br>
+      <p><span class="glyphicon glyphicon-map-marker"></span><span id="city">Boulogne sur mer, France</span></p>
+      <p><span class="glyphicon glyphicon-phone"></span><span id="tel">Tél: 0680500000</span></p>
+      <p><span class="glyphicon glyphicon-envelope"></span><span id="mailtext">Email:</span><a href="mailto:jessy.calon@laposte.net" id="mail">jessy.calon@laposte.net</a></p><br>
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <br>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button id="contact" class="btn pull-right" type="submit">Envoyer</button><br><br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<footer class="container-fluid text-center">
+  <p>Fait par Jessy apprenant Simplon @Boulogne sur mer</p>
+</footer>
+
+<script>
+$(document).ready(function(){
+    $("#modal_trigger").click(function(){
+        $("#myModal").modal();
+    });
+});
+</script>
+
+</body>
+</html>

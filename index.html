@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Mon Portfolio 2.0</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+  <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Short+Stack' rel='stylesheet' type='text/css'>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <style>
+
+    /* Barre de navigation */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    /*Pied de page*/
+
+    footer {
+    margin-top: 3%;
+    font-size: 15px;
+    color: rgb(229, 229, 233);
+	  background-color: #1e327c;
+    padding: 25px;
+    }
+
+    .navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+
+  #presentation {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+
+  </style>
+</head>
+<body>
+
+  <!-- Barre de navigation -->
+
+<nav class="borderNav">
+  <div class="container-fluid" id="test">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Page principale</a></li>
+        <li><a href="index1.html">A propos</a></li>
+        <li><a href="index2.html">Page à venir</a></li>
+        <li><a href="index3.html">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+  <li><a id ="modal_trigger" onclick="function()"><span class="glyphicon glyphicon-log-in"></span>Connexion</a></li>
+</ul>
+      <ul class="nav navbar-nav navbar-right">
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container">
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="padding:35px 50px;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4><span class="glyphicon glyphicon-lock"></span>Connexion</h4>
+        </div>
+        <div class="modal-body" style="padding:40px 50px;">
+          <form role="form">
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span>Nom d'utilisateur</label>
+              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span>Mot de passe</label>
+              <input type="password" class="form-control" id="psw" placeholder="Enter password">
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="" checked>Se souvenir de moi</label>
+            </div>
+              <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Connexion</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span>Annuler</button>
+          <p><a  class="sign_up" href="#">Devenir membre</a></p>
+          <p><a class="sign_up" href="#">Mot de passe oublié?</a></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>Bienvenue sur mon Portfolio 2.0 !</h1>
+    <p id="presentation">Hi ! Vous êtes bien arrivé(e) sur mon Portfolio, petite présentation rapide. Je suis Jessy, j'ai 26 ans, j'aime l'informatique, le cinéma/séries, le dessin et la guitare ! Bonne navigation !</p>
+  </div>
+</div>
+
+<div class="container-fluid bg-3 text-center">
+  <div class="row">
+    <div class="col-sm-3">
+
+
+      <!-- Image et boutton GOT -->
+
+      <img src="img/gameofthrones.jpg" data-toggle="tooltip" class="img-responsive" style="width:100%" alt="Image">
+      <strong><figcaption>Game of thrones</figcaption><div>
+    <button class="btn btn-success1 btn-md">Synopsis</button>
+  </div></strong>
+    </div>
+
+    <!-- Image et bouton Breaking Bad -->
+
+
+    <div class="col-sm-3">
+      <img src="img/walterwhite.jpeg" data-toggle="tooltip" class="img-responsive" style="width:100%" alt="Image">
+      <strong><figcaption>Breaking Bad</figcaption><div>
+    <button class="btn btn-success2 btn-md">Synopsis</button>
+  </div></strong>
+    </div>
+
+    <!-- Image et bouton Kaamelott -->
+
+
+    <div class="col-sm-3">
+      <img src="img/kaamelott.jpg" data-toggle="tooltip" class="img-responsive" style="width:100%" alt="Image">
+      <strong><figcaption>Kaamelott</figcaption><div>
+    <button class="btn btn-success3 btn-md">Synopsis</button>
+  </div></strong>
+    </div>
+
+    <!-- Image et bouton The Walking Dead -->
+
+    <div class="col-sm-3">
+      <img src="img/walking.jpeg" data-toggle="tooltip" class="img-responsive" style="width:100%" alt="Image">
+      <strong><figcaption>The walking dead</figcaption><div>
+    <button class="btn btn-success4 btn-md">Synopsis</button>
+  </div></strong></strong>
+    </div>
+  </div>
+</div><br>
+
+<!-- Image et bouton Le seigneur des anneaux -->
+
+<div class="container-fluid bg-3 text-center">
+  <div class="row">
+    <div class="col-sm-3">
+      <img src="img/seigneur.jpg" data-toggle="tooltip" class="img-responsive" style="width:100%" alt="Image">
+      <strong><figcaption>Le seigneur des anneaux</figcaption><div>
+    <button class="btn btn-success5 btn-md">Synopsis</button>
+  </div></strong>
+    </div>
+
+    <!-- Image et bouton Chappie -->
+
+    <div class="col-sm-3">
+      <img src="img/chappie.jpg" data-toggle="tooltip" class="img-responsive" style="width:100%" alt="Image">
+      <strong><figcaption>Chappie</figcaption><div>
+    <button class="btn btn-success6 btn-md">Synopsis</button>
+  </div></strong>
+    </div>
+
+    <!-- Image et bouton American Sniper -->
+
+    <div class="col-sm-3">
+      <img src="img/americain.jpg" data-toggle="tooltip" class="img-responsive" style="width:100%" alt="Image">
+      <strong><figcaption>American Sniper</figcaption><div>
+    <button class="btn btn-success7 btn-md">Synopsis</button>
+  </div></strong>
+    </div>
+
+    <!-- Image et bouton Seul sur Mars -->
+
+    <div class="col-sm-3">
+      <img src="img/seul.jpg" data-toggle="tooltip" class="img-responsive" style="width:100%" alt="Image">
+      <strong><figcaption>Seul sur Mars</figcaption><div>
+    <button class="btn btn-success8 btn-md">Synopsis</button>
+  </div></strong>
+    </div>
+  </div>
+</div><br><br>
+
+<footer class="container-fluid text-center">
+  <p>Fait par Jessy apprenant Simplon @Boulogne sur mer</p>
+</footer>
+
+<script>
+$(document).ready(function(){
+    $('.btn-success1').tooltip({title: "Il y a très longtemps, à une époque oubliée, une force a détruit l'équilibre des saisons. Dans un pays où l'été peut durer plusieurs années et l'hiver toute une vie, des forces sinistres et surnaturelles se pressent aux portes du Royaume des Sept Couronnes.", trigger: "focus"});
+
+        $('.btn-success2').tooltip({title: "La série se concentre sur Walter « Walt » White, un professeur de chimie sur-qualifié et père de famille, qui, ayant appris qu'il est atteint d'un cancer du poumon en phase terminale, sombre dans le crime pour assurer l'avenir financier de sa famille.", trigger: "focus"});
+
+                $('.btn-success3').tooltip({title: "Ve siècle, île de Bretagne. Alors que l’Empire romain s’effondre et que le christianisme s’impose peu à peu face aux dieux païens, le royaume de Kaamelott s’organise autour de son souverain, le roi Arthur ; entouré de ses fidèles chevaliers, il s’attelle à la mission que les Dieux lui ont confiée : rechercher le Saint Graal.", trigger: "focus"});
+
+                                $('.btn-success4').tooltip({title: "Après une épidémie post-apocalyptique ayant transformé la quasi-totalité de la population américaine et mondiale en poisson-clown ou « rôdeurs », un groupe d'hommes et de femmes mené par l'adjoint du shérif Lucky Luke du comté de Kings (en Géorgie), Rick Grimes, tente de survivre… ", trigger: "focus"});
+
+                                                                $('.btn-success5').tooltip({title: "Dans ce chapitre de la trilogie, le jeune et timide Hobbit, Frodon Sacquet, hérite d'un anneau. Bien loin d'être une simple babiole, il s'agit de l'Anneau Unique, un instrument de pouvoir absolu qui permettrait à Sauron, le Seigneur des ténèbres, de régner sur la Terre du Milieu et de réduire en esclavage ses peuples.", trigger: "focus"});
+
+                                                                $('.btn-success6').tooltip({title: "Dans un futur proche, la population, opprimée par une police entièrement robotisée, commence à se rebeller. Chappie, l’un de ces droïdes policiers, est kidnappé. Reprogrammé, il devient le premier robot capable de penser et ressentir par lui-même.", trigger: "focus"});
+
+                                                                $('.btn-success7').tooltip({title: "Tireur d'élite des Navy SEAL, Chris Kyle est envoyé en Irak dans un seul but : protéger ses camarades. Sa précision chirurgicale sauve d'innombrables vies humaines sur le champ de bataille et, tandis que les récits de ses exploits se multiplient, il décroche le surnom de 'La Légende.'", trigger: "focus"});
+
+                                                                $('.btn-success8').tooltip({title: "Lors d’une expédition sur Mars, l’astronaute Mark Watney (Matt Damon) est laissé pour mort par ses coéquipiers, une tempête les ayant obligés à décoller en urgence. Mais Mark a survécu et il est désormais seul, sans moyen de repartir, sur une planète hostile.", trigger: "focus"});
+     // $('.btn-warning').tooltip({title: "Hooray!", trigger: "hover"});
+    // $('.btn-danger').tooltip({title: "Hooray!", trigger: "focus"});
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $("#modal_trigger").click(function(){
+        $("#myModal").modal();
+    });
+});
+</script>
+
+
+</body>
+</html>
